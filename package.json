@@ -5,12 +5,14 @@
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.26.14",
     "dart-sass": "^1.25.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0"
   },
   "scripts": {
-    "sass:watch": "gulp sass:watch"
+    "serve": "gulp serve",
+    "sass": "gulp sass"
   },
   "repository": {
     "type": "git",
