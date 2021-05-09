@@ -1,0 +1,26 @@
+{
+  "name": "social-proof-section",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "scripts": {
+    "sass:watch": "gulp sass:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ADi2991/social-proof-section.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ADi2991/social-proof-section/issues"
+  },
+  "homepage": "https://github.com/ADi2991/social-proof-section#readme"
+}
