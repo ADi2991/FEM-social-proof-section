@@ -5,10 +5,18 @@
 /* *  *  *  *
  *  Fonts   *
  * *  *  *  */
-.attribution {
-  font-size: 11px;
-  text-align: center;
+.bg-top-img {
+  height: 100vh;
+  width: 100vh;
+  position: absolute;
 }
-.attribution a {
-  color: #3e52a3;
+
+.bg-bottom-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+body {
+  margin: 0;
 }
