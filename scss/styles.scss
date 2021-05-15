@@ -1,17 +1,107 @@
+@use "sass:map";
 @import "variables";
 
 .bg-top-img {
-  height: 100vh;
-  width: 100vh;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .bg-bottom-img {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
 }
 
+html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 body {
   margin: 0;
+  //outline: 3px solid red;
+  display: flex;
+}
+
+.content {
+  //outline: 3px solid orange;
+  padding: 7.5% 10%;
+  display: block;
+
+  /* TOP CONTENT */
+
+  .content-top {
+    display: flex;
+    //outline: 3px solid orchid;
+    position: relative;
+    align-items: center;
+    padding: 2rem 0;
+    .summary {
+      width: 50%;
+      flex: 0.75;
+      //outline: 3px solid blue;
+      box-sizing: border-box;
+      text-align: left;
+      @include theme-font("normal");
+      h1 {
+        margin: 0 0 5% 0;
+        color: $magenta-dark;
+        font-size: 40px;
+      }
+      p {
+        margin: 0;
+        color: $dark-gray-magenta;
+        font-size: 14px;
+        line-height: 1.5rem;
+      }
+    }
+
+    .content-top-filler {
+      flex: 0.2;
+    }
+
+    .ratings {
+      //outline: 3px dashed aqua;
+      box-sizing: border-box;
+      width: 50%;
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      flex: 1 1 0;
+      .rating-bar {
+        margin: 1.5% 0;
+        padding: 3%;
+        border-radius: 5px;
+        background-color: $light-gray-magenta;
+        z-index: 2;
+        @include theme-font('bold');
+        color: $magenta-dark;
+        font-size: 13px;
+        width: 70%;
+        img {
+          margin-right: 5px;
+        }
+        img:nth-of-type(5) {
+          margin-right: 1.5rem;
+        }
+      }
+      div:nth-of-type(1) {
+        transform: translateX(-20%);
+      }
+      div:nth-of-type(2) {
+        transform: translateX(-10%);
+      }
+    }
+  }
+
+  /* BOTTOM CONTENT */
+  .content-bottom {
+    outline: 3px solid blueviolet;
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    padding: 2rem;
+  }
 }

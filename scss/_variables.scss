@@ -22,6 +22,6 @@ $white: hsl(0, 0%, 100%);
 $font-weights: ("regular": 400, "medium": 500, "bold": 700);
 
 @mixin theme-font($weight-type) {
-  font-family: 'Spartan', 'sans-serif';
+  font-family: 'Spartan', sans-serif;
   font-weight: map.get($font-weights, $weight-type);
 }
