@@ -86,12 +86,12 @@ body {
 .content .content-top .ratings .rating-bar img {
   margin-right: 5px;
 }
-@media all and (device-width > 375px) {
+@media all and (min-device-width: 375px) {
   .content .content-top .ratings .rating-bar img:nth-of-type(5) {
     margin-right: 1.5rem;
   }
 }
-@media all and (device-width > 375px) {
+@media all and (min-device-width: 375px) {
   .content .content-top .ratings div:nth-of-type(1) {
     transform: translateX(-20%);
   }
@@ -116,7 +116,7 @@ body {
 .content .content-bottom .testimonial:nth-child(2) {
   grid-area: irene;
 }
-@media all and (device-width > 375px) {
+@media all and (min-device-width: 375px) {
   .content .content-bottom .testimonial:nth-child(2) {
     transform: translateY(7.5%);
   }
@@ -124,7 +124,7 @@ body {
 .content .content-bottom .testimonial:nth-child(3) {
   grid-area: anne;
 }
-@media all and (device-width > 375px) {
+@media all and (min-device-width: 375px) {
   .content .content-bottom .testimonial:nth-child(3) {
     transform: translateY(15%);
   }
