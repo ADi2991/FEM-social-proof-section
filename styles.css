@@ -63,7 +63,6 @@ body {
 }
 .content .content-top .ratings {
   box-sizing: border-box;
-  width: 50%;
   display: flex;
   align-items: flex-end;
   flex-direction: column;
@@ -74,7 +73,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   margin: 1.5% 0;
-  padding: 4% 5%;
+  padding: 3.5% 5%;
   border-radius: 5px;
   background-color: #f7f2f7;
   z-index: 2;
@@ -97,9 +96,66 @@ body {
   transform: translateX(-10%);
 }
 .content .content-bottom {
-  outline: 3px solid blueviolet;
+  display: grid;
+  grid-template-areas: "colton irene anne";
+  column-gap: 2rem;
+  padding: 2rem 0;
+}
+.content .content-bottom .testimonial {
+  background-color: #502050;
+  padding: 2.5rem 2rem;
+  border-radius: 10px;
+}
+.content .content-bottom .testimonial:nth-child(1) {
+  grid-area: colton;
+}
+.content .content-bottom .testimonial:nth-child(2) {
+  grid-area: irene;
+  transform: translateY(7.5%);
+}
+.content .content-bottom .testimonial:nth-child(3) {
+  grid-area: anne;
+  transform: translateY(15%);
+}
+.content .content-bottom .testimonial .persona {
   display: flex;
-  flex-direction: row;
-  height: 50%;
-  padding: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
+.content .content-bottom .testimonial .persona img {
+  width: 2.5rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+.content .content-bottom .testimonial .persona .name {
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 13px;
+  margin-bottom: 3px;
+  margin-top: 0;
+}
+.content .content-bottom .testimonial .persona .role {
+  font-family: "Spartan", sans-serif;
+  font-weight: 400;
+  color: #ee68a4;
+  font-size: 13px;
+  margin-bottom: 0;
+  margin-top: 3px;
+}
+.content .content-bottom .testimonial .review {
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  color: #f7f2f7;
+  font-size: 13px;
+  line-height: 1.2rem;
+  margin-bottom: 0;
+}
+.content .content-bottom .testimonial .review:before {
+  content: open-quote;
+}
+.content .content-bottom .testimonial .review:after {
+  content: close-quote;
 }
