@@ -21,12 +21,10 @@ html {
 
 body {
   margin: 0;
-  //outline: 3px solid red;
   display: flex;
 }
 
 .content {
-  //outline: 3px solid orange;
   padding: 7.5% 10%;
   display: block;
 
@@ -34,14 +32,12 @@ body {
 
   .content-top {
     display: flex;
-    //outline: 3px solid orchid;
     position: relative;
     align-items: center;
     padding: 2rem 0;
     .summary {
       width: 50%;
       flex: 0.75;
-      //outline: 3px solid blue;
       box-sizing: border-box;
       text-align: left;
       @include theme-font("normal");
@@ -63,7 +59,6 @@ body {
     }
 
     .ratings {
-      //outline: 3px dashed aqua;
       box-sizing: border-box;
       display: flex;
       align-items: flex-end;
@@ -86,14 +81,14 @@ body {
           margin-right: 5px;
         }
 
-        @media all and (min-device-width: 375px) {
+        @media all and (min-device-width: 376px) {
           img:nth-of-type(5) {
             margin-right: 1.5rem;
           }
         }
       }
 
-      @media all and (min-device-width: 375px) {
+      @media all and (min-device-width: 376px) {
         div:nth-of-type(1) {
           transform: translateX(-20%);
         }
@@ -106,27 +101,25 @@ body {
 
   /* BOTTOM CONTENT */
   .content-bottom {
-    //outline: 1px dotted blueviolet;
     display: grid;
     grid-template-areas: "colton irene anne";
     column-gap: 2rem;
     padding: 2rem 0;
 
     .testimonial {
-      //outline: 1px dotted green;
       background-color: $magenta-dark;
       padding: 2.5rem 2rem;
       border-radius: 10px;
       &:nth-child(1) { grid-area: colton; }
       &:nth-child(2) {
         grid-area: irene;
-        @media all and (min-device-width: 375px) {
+        @media all and (min-device-width: 376px) {
           transform: translateY(7.5%);
         }
       }
       &:nth-child(3) {
         grid-area: anne;
-        @media all and (min-device-width: 375px) {
+        @media all and (min-device-width: 376px) {
           transform: translateY(15%);
         }
       }
